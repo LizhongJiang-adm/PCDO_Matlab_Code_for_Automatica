@@ -47,7 +47,6 @@ switch ExecutionMode
         options.fmincon.Display = 'iter';
         
         fprintf('\nStep 3: Running the solver once...\n');
-        problem.pathConstraints.constraintGrid = linspace(problem.time.T0, problem.time.TF, 40 + 1);
     
         [solution, stats] = solve_with_UBMethod(problem, options);
         

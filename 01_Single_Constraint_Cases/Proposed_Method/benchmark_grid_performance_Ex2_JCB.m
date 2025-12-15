@@ -23,8 +23,7 @@ fprintf('--- Starting Grid Sensitivity Benchmark for Upper-Bound Method ---\n');
 
 % Define the range of initial interval numbers to test
 TMP = 0:10;
-initial_interval_counts = 2.^TMP;
-initial_interval_counts = [2 5 10 20 40 80 160 320 640 1280];
+
 num_tests = length(initial_interval_counts);
 
 % Pre-allocate arrays to store results
